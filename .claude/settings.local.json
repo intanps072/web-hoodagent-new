@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:5000/event-products)",
+      "Bash(curl -s http://localhost:5000/events)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
