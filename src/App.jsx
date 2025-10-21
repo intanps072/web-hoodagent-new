@@ -30,6 +30,11 @@ const App = () => {
             <Route path="/events" element={<EventsPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
 
+            {/* <Route path="/products/:id" element={<ProductDetail />} />
+            <Route path="/event-products/:id" element={<EventProductDetail />} />
+            <Route path="/events/:id" element={<EventDetail />} /> */}
+
+
             {/* Admin Routes */}
             <Route path="/admin/login" element={<AdminLoginPage />} />
             <Route path="/admin/register" element={<AdminRegisterPage />} />

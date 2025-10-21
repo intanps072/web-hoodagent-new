@@ -96,7 +96,7 @@ const EventsPage = () => {
             <div className="flex items-center justify-center gap-3 text-white/90 text-xl mb-6">
               <span className="flex items-center gap-2">
                 <i className="bx bx-calendar text-[#FFAE00]"></i>
-                5th Anniversary - 2025
+                8th Anniversary - 2025
               </span>
             </div>
           </motion.div>

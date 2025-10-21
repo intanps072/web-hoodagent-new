@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";  
 import { assets } from "./../assets/assets";
 import { useCart } from "../context/CartContext";
 import CartModal from "./CartModal";
@@ -110,16 +110,18 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const handleSearchClick = (item) => {
+   const handleSearchClick = (item) => {
     setSearchQuery("");
     setShowResults(false);
     // Navigate based on type
-    if (item.type === "product" || item.type === "event-product") {
+    if (item.type === "product"){
       window.location.href = "/products";
-    } else if (item.type === "event") {
+    } else if (item.type === "event-product") {
       window.location.href = "/events";
-    }
+    } else if (item.type === "event")
+      window.location.href = "/#event";
   };
+  
 
   return (
     <div

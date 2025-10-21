@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ImageLightbox = ({ isOpen, onClose, images = [], initialIndex = 0, productName }) => {
   const [scale, setScale] = useState(1);
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
 
-  // Update current index when initialIndex changes 
+  // Update current index when initialIndex changes
   useEffect(() => {
     if (isOpen) {
       setCurrentIndex(initialIndex);
@@ -17,20 +17,21 @@ const ImageLightbox = ({ isOpen, onClose, images = [], initialIndex = 0, product
   const imageArray = Array.isArray(images) ? images : images ? [images] : [];
   const currentImage = imageArray[currentIndex] || "";
 
-   // ✅ Gunakan useCallback agar stabil
-  // Navigate to next image (Berubah kode nya)
-  const goToNext = useCallback(() => {
-    setCurrentIndex((prev) =>
-      prev < imageArray.length - 1 ? prev + 1 : prev
-    );
-    setScale(1);
-  }, [imageArray.length]);
+  // Navigate to next image
+  const goToNext = () => {
+    if (currentIndex < imageArray.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+      setScale(1); // Reset zoom
+    }
+  };
 
-  // Navigate to previous image (Berubah kode nya)
-  const goToPrevious = useCallback(() => {
-    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : prev));
-    setScale(1);
-  }, []);
+  // Navigate to previous image
+  const goToPrevious = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+      setScale(1); // Reset zoom
+    }
+  };
 
   // Prevent body scroll when lightbox is open
   useEffect(() => {
@@ -45,7 +46,6 @@ const ImageLightbox = ({ isOpen, onClose, images = [], initialIndex = 0, product
     };
   }, [isOpen]);
 
-  // ✅ Tambahkan fungsi2 ke dependency array
   // Handle keyboard events
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -68,19 +68,19 @@ const ImageLightbox = ({ isOpen, onClose, images = [], initialIndex = 0, product
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, currentIndex, goToNext, goToPrevious, onClose, handleZoomIn, handleZoomOut, setScale]); // Add currentIndex as dependency
+  }, [isOpen, currentIndex]); // Add currentIndex as dependency
 
-  const handleZoomIn = useCallback(() => {
+  const handleZoomIn = () => {
     setScale((prev) => Math.min(prev + 0.25, 3));
-  }, []);
+  };
 
-  const handleZoomOut = useCallback(() => {
+  const handleZoomOut = () => {
     setScale((prev) => Math.max(prev - 0.25, 0.5));
-  }, []);
+  };
 
-  const handleReset = useCallback(() => {
+  const handleReset = () => {
     setScale(1);
-  }, []);
+  };
 
   return (
     <AnimatePresence>
