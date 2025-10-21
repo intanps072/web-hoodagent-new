@@ -5,7 +5,6 @@ import { CartProvider } from "./context/CartContext";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
-import ProjectsPage from "./pages/ProjectsPage";
 import ProductsPage from "./pages/ProductsPage";
 import EventsPage from "./pages/EventsPage";
 import GalleryPage from "./pages/GalleryPage";
@@ -14,7 +13,6 @@ import AdminRegisterPage from "./pages/AdminRegisterPage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import ProductsManagement from "./pages/admin/ProductsManagement";
 import EventProductsManagement from "./pages/admin/EventProductsManagement";
-import ProjectsManagement from "./pages/admin/ProjectsManagement";
 import EventsManagement from "./pages/admin/EventsManagement";
 import TestimonialsManagement from "./pages/admin/TestimonialsManagement";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -28,7 +26,6 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/events" element={<EventsPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
@@ -47,7 +44,6 @@ const App = () => {
             >
               <Route path="products" element={<ProductsManagement />} />
               <Route path="event-products" element={<EventProductsManagement />} />
-              <Route path="projects" element={<ProjectsManagement />} />
               <Route path="events" element={<EventsManagement />} />
               <Route path="testimonials" element={<TestimonialsManagement />} />
             </Route>

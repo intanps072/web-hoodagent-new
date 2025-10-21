@@ -16,11 +16,7 @@ const Footer = () => {
                 className="h-16 md:h-20 w-auto object-contain mb-6 cursor-pointer"
               />
             </Link>
-            <p className="text-gray-400 leading-relaxed mb-6">
-              Hood Agent is a platform connecting communities with
-              opportunities. We believe everyone deserves access to information,
-              events, and opportunities that help them grow.
-            </p>
+
             <div className="flex gap-4">
               <a
                 href="http://shopee.co.id/hoodagent_"
@@ -75,14 +71,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/#catalog"
-                  className="text-gray-400 hover:text-[#FFAE00] transition-colors duration-300"
-                >
-                  Catalog
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/products"
                   className="text-gray-400 hover:text-[#FFAE00] transition-colors duration-300"
                 >
@@ -95,6 +83,14 @@ const Footer = () => {
                   className="text-gray-400 hover:text-[#FFAE00] transition-colors duration-300"
                 >
                   Events
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#gallery"
+                  className="text-gray-400 hover:text-[#FFAE00] transition-colors duration-300"
+                >
+                  Gallery
                 </Link>
               </li>
             </ul>
