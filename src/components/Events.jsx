@@ -59,6 +59,7 @@ const Events = () => {
     return () => window.removeEventListener("resize", updateCardsToShow);
   }, []);
 
+  // Status Event
   const getStatusBadge = (status) => {
     if (status === "upcoming") {
       return (
