@@ -114,7 +114,7 @@ const Navbar = () => {
     setSearchQuery("");
     setShowResults(false);
     // Navigate based on type
-    if (item.type === "product"){
+    if (item.type === "product"){ // | 
       window.location.href = "/products";
     } else if (item.type === "event-product") {
       window.location.href = "/events";

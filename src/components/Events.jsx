@@ -60,7 +60,7 @@ const Events = () => {
   }, []);
 
   const getStatusBadge = (status) => {
-    if (status === "upcoming" || status === "ongoing") {
+    if (status === "upcoming") {
       return (
         <div className="flex items-center gap-1.5 text-green-600 font-semibold text-xs">
           <span className="text-lg">🔥</span>
@@ -74,7 +74,15 @@ const Events = () => {
           <span>Ended</span>
         </div>
       );
-    }
+    } else if (status === "ongoing") {
+      return (
+        <div className="flex items-center gap-1.5 text-red-400 font-semibold text-xs">
+          <span className="text-lg">🔥</span>
+          <span>On Going</span>
+        </div>
+      );
+    };
+
     return null;
   };
 
