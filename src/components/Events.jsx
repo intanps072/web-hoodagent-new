@@ -64,21 +64,19 @@ const Events = () => {
     if (status === "upcoming") {
       return (
         <div className="flex items-center gap-1.5 text-green-600 font-semibold text-xs">
-          <span className="text-lg">🔥</span>
-          <span>Coming Soon</span>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABcklEQVR4AezS0VXDMAyF4cAiwCYwCTAJMAlsAkwCTAL6OFGqpnVxQ/vWHquSbfm/spzz4ci/k0Bt8HVMnsMew6ZxiBbdBe11NPFDxNP4jwAYsKpVn9DPDPglAsAfcbiC72N+FbYx9hHQ2wRfBkmlwGcRv4RZCzdYH/LXI6DS7zigtyBvEd+EqRg4wvZoCQAlWEsQEgwutuZWPHOG33kDjwWsFQlWJShLsD23qrAU+KKSVm+gGl+Fw/aBtUGfK5i4IsDlyG1aFbgtWQ6/l7mbEQfOSp/KfjOsAqp1CBwETLXAjEiC5Myrvxg37Y3hMFQBi9pESL8zsYLlMG3jqynKPM+JNwR+F+NPz1MopltHArdu5uL8BrmenlDG1WuZFvogdgr9JVCh81jriHgn3lxOV4sktgzAG7G8oZtkvv2Mm28wJcwCQG/DMyLMFwXM1o7s0yIgtgaICSFfFWEWS6vRIwAAzK9OdkY9AovhaugRkLfYfgAAAP//e/5XCgAAAAZJREFUAwAgCkoxQI/mMwAAAABJRU5ErkJggg=="/>          <span>Coming Soon</span>
         </div>
       );
     } else if (status === "completed" || status === "ended") {
       return (
         <div className="flex items-center gap-1.5 text-gray-400 font-semibold text-xs">
-          <span className="text-lg">⏸️</span>
-          <span>Ended</span>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABD0lEQVR4AcSUgRHCIAxFq5PoJrqJm6iT6Ca6iW6i/6FwhSuF0Gq9RFKS/AeIXXc//iwOeGmDuIZBI4cPJpn8+w52oj7krApX6Ix4yF1SXz5HLxqa+li6g6OmN/JWo/fSb04BEb1faIiBhPIUEBJzBTnASoAWV1tsOUBcNeFpCoCzPpTYrQDEuS34KKQGcNIqEdTgjBhhbtxTM1d51koAxPlv3KSAMN4X32p+1EoAVscqEQZiEodcAiC+VyEjEH8sxZWrx1kJQBHiHkJcLU5zDYA6hIGYxGmsBVALhNHkFoBJ2BengPs34d/v1pF2r0HcpYCzZqMCPVuMY0Qj9KQAxPkxW96k9HAJ0MgCQmKu4A0AAP//JF66NwAAAAZJREFUAwBZuzwx60FDcgAAAABJRU5ErkJggg=="/>          <span>Ended</span>
         </div>
       );
     } else if (status === "ongoing") {
       return (
         <div className="flex items-center gap-1.5 text-red-400 font-semibold text-xs">
-          <span className="text-lg">🔥</span>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABPklEQVR4AezTjU3DMBAFYMMksAlsApMAkwCTwCawCdzn5oqdxkVAUKWqkZ/v1/fsi31e/vk7KMFVHO4l8DbhImQO+mMYGbsPfXGMTpDFScUAGVsh+k0o/HAXesZC/RojAruT9RTTZeAhoBA/0F/Dl7FQCxKyw4hAAYm3Mb0HEJH8dh6u0sbYYmSHEYFiEvPY7GeOCUnIzBz6DloCiX7aR2TlbvSaDW0LnIIPtCyWFGvYaqhVfC2BApL4/wI1krS0BMl6FtVHiFAdozi/BCRkR1Ada0/tCVw79fVxBHEYxfnFs1Z3And9G5D1S7hxatXl8xNcV+9m0s85NpFS5n52mT6Pb7vRlmCKrytOBN/28zhblFfMo5kjWzL3s8VyLb1iqUUeyU5izd4/dQ8sU5cIFPfgPJ6foHtg+wgytor8BAAA///JzApRAAAABklEQVQDACBNSjE1Wn12AAAAAElFTkSuQmCC"/>
           <span>On Going</span>
         </div>
       );

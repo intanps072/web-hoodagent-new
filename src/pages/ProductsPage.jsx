@@ -68,6 +68,7 @@ const ProductsPage = () => {
       ...product,
       rawPrice: product.price, // Save original price number
       price: formatPrice(product.price), // Formatted string for display
+      source: "product",  // Add this
     };
     addToCart(productForCart);
     setAddedToCart(String(product.id)); // Convert to string for consistent comparison

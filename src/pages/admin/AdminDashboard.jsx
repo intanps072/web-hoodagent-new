@@ -14,7 +14,6 @@ const AdminDashboard = () => {
   const [stats, setStats] = useState({
     totalProducts: 0,
     eventProducts: 0,
-    // projects: 0,
     loading: true,
   });
 
@@ -22,16 +21,14 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const [productsRes, eventProductsRes ] = await Promise.all([  //, projectsRes
+        const [productsRes, eventProductsRes ] = await Promise.all([  
           axios.get(`${API_URL}/products`),
           axios.get(`${API_URL}/event-products`),
-          // axios.get(`${API_URL}/projects`),
         ]);
 
         setStats({
           totalProducts: productsRes.data.length,
           eventProducts: eventProductsRes.data.length,
-          // projects: projectsRes.data.length,
           loading: false,
         });
       } catch (error) {
@@ -59,11 +56,6 @@ const AdminDashboard = () => {
       icon: "🎉",
       label: "Event Products",
     },
-    // {
-    //   path: "/admin/dashboard/projects",
-    //   icon: "📁",
-    //   label: "Catalog (Projects)",
-    // },
     {
       path: "/admin/dashboard/events",
       icon: "📅",
@@ -259,35 +251,6 @@ const AdminDashboard = () => {
               </div>
             </motion.div>
 
-            {/* Projects Card */}
-            {/* <motion.div
-              className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-              whileHover={{ scale: 1.02 }}
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-gray-500 text-sm font-medium mb-1">
-                    Catalog Items
-                  </p>
-                  {stats.loading ? (
-                    <div className="animate-pulse h-8 w-16 bg-gray-200 rounded"></div>
-                  ) : (
-                    <h3 className="text-3xl font-bold text-gray-800">
-                      {stats.projects}
-                    </h3>
-                  )}
-                </div>
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <i className="bx bx-folder-open text-3xl text-white"></i>
-                </div>
-              </div>
-              <div className="mt-4 flex items-center text-sm">
-                <span className="text-blue-600 font-semibold">
-                  <i className="bx bx-collection"></i> Portfolio
-                </span>
-                <span className="text-gray-400 ml-2">Project gallery</span>
-              </div>
-            </motion.div> */}
           </motion.div>
 
           {/* Content Area */}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCart } from "../context/CartContext";
 import ImageLightbox from "./ImageLightbox";
+import { source } from "framer-motion/client";
 
 const ProductDetailModal = ({ isOpen, onClose, product }) => {
   const { addToCart } = useCart();
@@ -9,6 +10,7 @@ const ProductDetailModal = ({ isOpen, onClose, product }) => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [showAddedNotification, setShowAddedNotification] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  
 
   // Get product images (support both old single image and new images array)
   const productImages = product?.images && product.images.length > 0
@@ -50,10 +52,21 @@ const ProductDetailModal = ({ isOpen, onClose, product }) => {
   };
 
   const handleAddToCart = () => {
+    
+    const mainImage =
+      product.images && product.images.length > 0
+      ? product.images [0]
+      : product.images || "/placeholder-image.png";
+      
     const productForCart = {
-      ...product,
+      id : product.id,
+      name : product.name,
+      category : product.category,
       rawPrice: product.price,
       price: formatPrice(product.price),
+      image : mainImage,
+      quantity : 1,
+      source : product.source || "product",
     };
 
     // Add multiple times based on quantity
@@ -143,7 +156,7 @@ const ProductDetailModal = ({ isOpen, onClose, product }) => {
                               onClick={() => setSelectedImageIndex(index)}
                               className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all ${
                                 selectedImageIndex === index
-                                  ? "border-[#CB3B0F] scale-105"
+                                  ? "border-[#CB3B0F] scale-100"
                                   : "border-gray-200 hover:border-gray-400"
                               }`}
                             >

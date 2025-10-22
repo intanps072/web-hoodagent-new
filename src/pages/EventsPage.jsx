@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import axios from "axios";
 import { useCart } from "../context/CartContext";
 import ProductDetailModal from "../components/ProductDetailModal";
+import { source } from "framer-motion/client";
 
 const API_URL = "http://localhost:5000";
 
@@ -46,6 +47,7 @@ const EventsPage = () => {
       ...product,
       rawPrice: product.price,
       price: formatPrice(product.price),
+      source: "event", // Add this
     };
     addToCart(productForCart);
     setAddedToCart(String(product.id));
@@ -57,7 +59,12 @@ const EventsPage = () => {
   };
 
   const handleProductClick = (product) => {
-    setSelectedProduct(product);
+    const productWithSource = { 
+      ...product,
+      source : "event" 
+    };
+
+    setSelectedProduct(productWithSource);
     setIsDetailModalOpen(true);
   };
 

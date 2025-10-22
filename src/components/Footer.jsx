@@ -6,14 +6,14 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8 px-6 md:px-20 lg:px-32">
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 mb-12">
           {/* About Section */}
           <div className="lg:col-span-2">
             <Link to="/">
               <img
                 src={assets.logo}
                 alt="Hood Agent Logo"
-                className="h-16 md:h-20 w-auto object-contain mb-6 cursor-pointer"
+                className="h-16 md:h-16 w-auto object-contain mb-6 cursor-pointer"
               />
             </Link>
 
@@ -23,8 +23,17 @@ const Footer = () => {
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#CB3B0F] transition-all duration-300 hover:scale-110"
                 aria-label="Facebook"
               >
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABEElEQVR4AeyV4RHCIAyF1Ul0E51EnUSdRDfRTdpN8Hs56AlSqK3e+aO9vJCQkAfR0tXix89/EDjntuAOJA3qCrZDDl89AYUOFLqDUHCNbXPEzthFKRJQQEWvvsJlyYO9ARcgOfkc2VkUCVixBxIVt93C0QLZRwXACfRKjUAn0OKbVIKH99Uyb74PNQJbzI7bdOnLnOWk8eBHBPQz/FMwnQtJ5mRUT7wJ8xojAiZCSzBHS3SilMCqcnwTc1DmZBQhkxAyJ1FZgiRnklskKO1MrLW4cooESpiKmaDawblFH7fIbsjMtTNoyrNZDW8v0t9AH5IoISQOHHXrqkaXHhHwZj7ADoyVDQujDUYEHe0XjScAAAD//89uo00AAAAGSURBVAMA4wGlMfHEpxkAAAAASUVORK5CYII=" />
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABp0lEQVR4AeSU0XECMQxEcRoJVAJUEqgEUgmkEkglkErIe54ziLMPbjLDVzISkmV5V5bOeZu8+O+fEFwulym663SFnY7t7NMWdWA7AD9RgT+wkunjPpanBBxfoWt0lVJaYs/oN7qB3D3cYXlIAECscs76AJSgG+wCleRAfIvflEECDglkawQ7cVpAFfcqFmBMIv3rRnGaBIBbkeAeLrl9a6v6sWrdJCDrHY3igJ2DMzjGjeA3ixkiiNddppS26B4VvOwVGzhqd4igVJNBadkCdZi2rQD3WzSv4SeTIYKS+9M5Egrs4LtQZdyvghUBlcbEXBWtcejOIFYdfYEtQnunFQG7kcDWbCWFxP5/sV8k5uWYedkJPy2CWIlV+g5KTJJwvHIr0hZBOXWm6hmLJXaPVQqRfgVGsIq1CK5vwCsDnqvGd8DeBpws3i474SfPLKybX1GpQnsC2M/TfxV+ovHsKL91A78WX6yv1+olUscAVnkVAS2x90esr9f+z/AT6JHU9qjOxkIsyjxzSL1JRXDbuvcg6ZOuiakW4ouX8P4Qq9EE5P5JXk7wCwAA//8GAodZAAAABklEQVQDABOAizGcUsklAAAAAElFTkSuQmCC"/>              
               </a>
+
+              <a
+                href="https://tokopedia.link/JHcLDnSRyXb"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#CB3B0F] transition-all duration-300 hover:scale-110"
+                aria-label="Facebook"
+              >
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABB0lEQVR4AeyV3RGCMBCE1Uq0E60ErUSpBDuRTqAT/DaTMFyARFFnfIC5Jfe/yemE3ebHz38QdF23BxVoPKQfXzl89gQ0PNOoAVr3rIJ0kdywk5IkoLl2WfkO5ZYH/QBKIKLC52BOS5KAkgJI1NztFo4WSL8QEMmVdVZyBDqBiu96Rai9LRKvjpccgStmx21cOvC5nDgebEPAPB+gl5DUOyJlJq4/RAhtDAHeMBLUxWJOFBOYrozBiXEODBfkNXCN1CTBKHuBI0kQRj7XNxdXXZJACZ9iJchOcB3R2yMKN2S2MJFgesS/gT4kJiHRaCqkW1c9+pgh4FqpwQkslQOFZoOGoKf9ovIEAAD//7I/WNMAAAAGSURBVAMAXiZ9MWo/LiwAAAAASUVORK5CYII="/>              
+              </a>
+
               <a
                 href="http://wa.me/message/IONCXXUB3M4DF1"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#CB3B0F] transition-all duration-300 hover:scale-110"
@@ -46,6 +55,7 @@ const Footer = () => {
               >
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABW0lEQVR4AcyUi3HCQAxE41QClSTphFSCqQSoBDqBTsw+jzGS7mMPmBk8ku8n7Up3uvv+evP3eQRd1+27x3eZ2oBXM1iJa1UjeZUA7C2/ki5BsFEW7TsJwN6K5CSFzG3ZEhlAgP7qt5e6LVuSQNipVAmUMlXSqqU0iTAiXDWxlu6k9NV4yRIIEGBqHCXljdzc3mrcS9M0V2krhWit9r9fGH4JgcCJFOAs4OCXbQSeZJEQyJODUuMkcXSrlYEjUPRxK86KCiH1QwWnuOQIZPUjHUXIf+PgyU4ksPv+VMQxjkhg1zlsO7737fz5PllqI8HRGFKq7o3RGTG2WRrzfDcSxIh4Y7hkKKXLnbBIXDA7TvqOQIdKObqLIg8qC42R7wZ7mZTFEWAmJw53KjLA2S5cqpoQYC0SnLn6EJEV07SMuROsMzepWQK8RDK+MeojPbA6EGEyS4sEs7xnGN0AAAD//52t8gAAAAAGSURBVAMAGF9uMe6PO4AAAAAASUVORK5CYII=" />
               </a>
+            
             </div>
           </div>
 
@@ -98,28 +108,25 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-6">Info & Contact Us</h3>
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start gap-2">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACBklEQVR4AcTU4VUbMRAEYCWNxFQSqASoxKYSSCU4lUAnl/nE7T3DyT7/ycPv5rRa7c6sVtb9bP/59/0C0zTtgkPwGnje8noO+HZbDbi4AyQheAv2wW3gQfoQg4/oIfbZ56xAyF+ThSRDe8rr7kd+GW+Cx4CP2H6OjWv9DAWSoEIVvycF8SHcx9gt43vwEqicmJjb5JgL+YSVQAJV9TxHPYboyBfoe4apzmCXNeR2I/x+miZFsResBLKi+gxNlZ28teYcyq8Atv4TsbOXxPBfJfArwZ6/XkGdAyItATbC2umfxHl+e51itIOqAonYmj9pCcRZbSGSadOqll/NY348I4FV0Efop3fF9HEWFdDnjMJIoCqv4Kpu7xAD/mqb3rf4nAnOymV3jAT6Ql7VmmqHubvhwNmE3YWEtuo9n/mCkUAl3Yuat+9g+RGAf9jNvCaMoLEOm90xEkBgq/0bJApR4LIhhdqV9rhg2uYCypOyYCUQIgJVicsjeUk4NdJ7a3Uei+hpzErAYkQcnmoQ6Dv3CHUPjskRv4oZCsxRKrIbrSqiealpDWG915q7ZeGLcVYgFSGvxIe0Q697emyCyM0VYhzirIDoWcQ/yHSPOFB5/e99aYetkQAXBQR8EUGs8r67rF0kl78pIChECO0EIbt/xq1t4SoBJEQCLXEPCHFv4mqBTaYzAf8AAAD//3M4UgYAAAAGSURBVAMACNzPMer5RG4AAAAASUVORK5CYII=" />
-                <span>Garut, Jawa Barat Indonesia</span>
+                <span>Jl. Pasundan No.4, Kota Kulon, Kec. Garut Kota, Kabupaten Garut, Jawa Barat 44112</span>
               </li>
+
               <li className="flex items-start gap-2">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABQ0lEQVR4AeyTARLBMBBFw0m4CUdxknISbsJNuEm9l2mi0pbSYcYMs7/ZTXb/TzYxDx/+/QWeNji3qK7rFTiDqSbHKilnASYqsABTTY59ImkLJNXl7M0fpEugKeIY2gJxgs+RHm0ZXzJq3OC5LOoTUL2iYLRIk3ssyY37BHYuAEW8MAUJuwbxAkjs/ZmQavUjOgK0353bywsZktsyj094M4idsyWO5q6b2lsSXkeAuUBiLMA/AEX2ECpMGELju3PjE/k+jJNBiV4BkyhSxCMLRWzZFnKJK3PAjrw146ANClhB8QW4840xkNiW4IbelrjQxkOBlIiIrfJebIMnk1w/pQyOowSsRsTTSDzYb/NKjBYoC8fGXxWIPeWVTLLmZJFLv30Cn2NecPFN+AjkiuVZgEv0D+Ml4k6yu0eQBaLcBz6/L3AFAAD//wMCA3wAAAAGSURBVAMAcy7iMcCtnqIAAAAASUVORK5CYII=" />
-                <a
-                  href="mailto:hello@hoodagent.com"
-                  className="hover:text-[#FFAE00] transition-colors duration-300"
-                >
-                  hello@hoodagent.com
-                </a>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB5UlEQVR4AcSVgXHCMAxF0y5SmKQwCTAJMAl0Eugk0Enoez4rteukNNz1yvlHsfylb8uOee7++Pf/ArfbbQF24ARsFx4HoG9xrwCjKyDBDJxIILbYSDbjfQ30KaqgPlxtGxQg8Q7qBZj0it2D5RM/7BxsgD7HTK6QMbjr1gjk5M5O5p6cc7ADZx3YKzgCEy7xKaTINsfi+mqVAIREzMPO2CS52xpEFJOjkIQVOVy17wmVAJ4DsDnDNGM7AYJTi35YhOTGSiJHGu4FiHTjVHdW1jgRJjyOcBXycJiHbtf1AvQsD6Z78zEVrMINf89xgwIveVBifp1sXIFBrz5EuYJQDZLjg6CcVStIMbmoRlWigvfYay6TwYMCjbrMEiQYbMFhWR4Uu264tlpBs0GJMe0RM/+IsHIPovarGHzAxuZGNaoV6FTEc1x9LL8RojzGeFDO1LEtEU4F4gNbExD1vJsfromD7xfdx5Ql6r6JpDu/Z468kNy7yCtdhpejVfA9oRJInq6TELPwhvS+V8xVWT4Rf0Je6eXNq1hX/hoBVwEkeu8r5slYE2SNTSicsYkds7TpSofTtEYgGIgY6J54FWvdOH1CYVfplW5yfRFa2VEBWYqAdCqwG2AyYeL+T0juGH4UGAua4v8EAAD//+IMh8cAAAAGSURBVAMAcbjYMbaTTBIAAAAASUVORK5CYII="/>
+                <span>Open : 08.00 AM - 05.00 PM (Monday-Saturday)</span>
               </li>
+
               <li className="flex items-start gap-2">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB/UlEQVR4AeSU0XXCMAxF0y5SmKRlksIkwCTQSaCTAJPQe0VsbCcpHz18NceKFflJT5LtvHZPfv4BwfV6nSEb5IA4TrzUd8zLRx3+tUUE2BDghKyRGbJHjojD4JKI8XtURgkIbNYp8Pbl9syZVr0siDZHtsgavFVJyGc9RgmA7BDHgoCjGWI/I65JJFYiq1TPMiAgG50+QJjtke+BE2t5QHLmw4rE2Uo+76Mi6IMJ2uOYem35tuvu1WhgJVlhXhLD5FBvoyLAlBbtbQc49dU9SWvARkdKqMK1BO+69hmpmpnzQ+l9JIkYyaElkN2jmNYzAQF0Tvap+ZsF94LpNloCrRlAUAnsre1KJ0vMlLyxkP3Ru5bAgNqzQGJF7okbGCTsjXvibfbEZSxK24EBQZRoAMDlKEk8UYrBPPtB2oPN/tLrMbUVGEiQRzUAvqiivFRllepfYkgqVVPtVUVgIMA6mR1qPVxHvFTeXm+5vw8vo3iTKu9POFcEYek6K6iy6JoHEisKDJmLt03a4kCU8IoAcLpYF3R/0UkMUvp5qtxo2+J+uDYIrrEiwJAuieUqn9icPTFK/J4hP2A3sGu2JVqFbTBaAjO1dI9l9BgP+x0biW6vJXWfxBh4NHOwMSoCemtQZYMuUcdsb/3WbkDFP602iSLQ1KsimAL9xf50gh8AAAD//wTlNwUAAAAGSURBVAMADOfhMUai0GQAAAAASUVORK5CYII=" />
                 <a
                   href="http://wa.me/message/IONCXXUB3M4DF1"
                   className="hover:text-[#FFAE00] transition-colors duration-300"
                 >
-                  +62 123 456 789
+                  +62 853-5254-6060
                 </a>
               </li>
             </ul>

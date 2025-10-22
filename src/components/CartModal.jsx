@@ -16,13 +16,16 @@ const CartModal = ({ isOpen, onClose }) => {
   } = useCart();
 
   const [productsData, setProductsData] = useState([]);
+  const [eventproductsData, setEventProductsData] = useState([]);
 
   // Fetch products data for images
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`${API_URL}/products`);
-        setProductsData(response.data);
+        const productsRes = await axios.get(`${API_URL}/products`);
+        const eventsRes = await axios.get(`${API_URL}/event-products`)
+        setProductsData(productsRes.data);
+        setEventProductsData(eventsRes.data);
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -33,10 +36,15 @@ const CartModal = ({ isOpen, onClose }) => {
   }, [isOpen]);
 
   // Get product image by ID (support both old single image and new images array)
-  const getProductImage = (productId) => {
-    const product = productsData.find(
-      (p) => String(p.id) === String(productId)
-    );
+  const getItemImage = (id, source) => {
+    let product = null;  // Add this
+      
+    if (source === "event") {
+      product = eventproductsData.find ((e) => String (e.id) === String (id));
+    } else {
+      product = productsData.find ((p) => String (p.id) === String (id))
+    }
+
     if (!product) return "/placeholder-image.png";
 
     // Support multiple images format (use first image)
@@ -188,7 +196,7 @@ const CartModal = ({ isOpen, onClose }) => {
                       >
                         <div className="flex gap-3">
                           <img
-                            src={getProductImage(item.id)}
+                            src={getItemImage(item.id, item.source)}
                             alt={item.name}
                             className="w-20 h-20 object-cover rounded-lg"
                           />

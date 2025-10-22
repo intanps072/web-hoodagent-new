@@ -114,7 +114,7 @@ const Navbar = () => {
     setSearchQuery("");
     setShowResults(false);
     // Navigate based on type
-    if (item.type === "product"){ // | 
+    if (item.type === "product"){         // | (item.type === "event-product") {
       window.location.href = "/products";
     } else if (item.type === "event-product") {
       window.location.href = "/events";
@@ -165,16 +165,6 @@ const Navbar = () => {
             >
               Our Story
             </Link>
-            {/* <Link
-              to="/projects"
-              className={`cursor-pointer hover:text-[#FFAE00] transition-colors duration-300 pb-1 border-b-2 ${
-                location.pathname === "/projects"
-                  ? "border-[#FFAE00] text-[#FFAE00]"
-                  : "border-transparent"
-              }`}
-            >
-              Catalog
-            </Link> */}
             <Link
               to="/events"
               className={`cursor-pointer hover:text-[#FFAE00] transition-colors duration-300 pb-1 border-b-2 ${
@@ -251,7 +241,7 @@ const Navbar = () => {
                         {/* Image */}
                         <div className="w-12 h-12 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
                           <img
-                            src={item.image || item.logo || assets.logo_dark}
+                            src={item.image || item.logo || assets.shirt_icon}
                             alt={item.name || item.title}
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                           />
