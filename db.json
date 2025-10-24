@@ -7,7 +7,6 @@
       "password": "admin123"
     }
   ],
-
   "products": [
     {
       "id": "null",
@@ -174,16 +173,17 @@
     },
     {
       "id": "14",
-      "name": "Traffic Poloshirt",
-      "category": "Poloshirts",
+      "name": "T-shirt",
+      "category": "T-Shirts",
       "price": 150000,
       "images": [
-        "/uploads/products/product-1761029017032-484024179.png"
+        "/uploads/products/product-1761214670916-270704848.png",
+        "/uploads/products/product-1761214682269-584536863.png",
+        "/uploads/products/product-1761214688976-349088733.png"
       ],
-      "description": "Material: Lacoste,  Color: Deep Grey, Screning: 3D Embroidery"
+      "description": "xxxx"
     }
   ],
-
   "events": [
     {
       "id": "1",
@@ -226,7 +226,6 @@
       "logo": "/uploads/products/product-1761104739291-112155454.png"
     }
   ],
-  
   "event-products": [
     {
       "id": "1",
@@ -339,7 +338,6 @@
       "description": "Material: Drill, Color: Black, Screning: Embroidery"
     }
   ],
-
   "testimonials": [
     {
       "id": "1",

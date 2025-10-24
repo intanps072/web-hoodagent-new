@@ -71,17 +71,17 @@ const Footer = () => {
                   Home
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/#story"
                   className="text-gray-400 hover:text-[#FFAE00] transition-colors duration-300"
                 >
                   Our Story
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
-                  to="/products"
+                  to="/#products"
                   className="text-gray-400 hover:text-[#FFAE00] transition-colors duration-300"
                 >
                   Products
@@ -101,6 +101,14 @@ const Footer = () => {
                   className="text-gray-400 hover:text-[#FFAE00] transition-colors duration-300"
                 >
                   Gallery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#testimonials"
+                  className="text-gray-400 hover:text-[#FFAE00] transition-colors duration-300"
+                >
+                  Testimonial
                 </Link>
               </li>
             </ul>

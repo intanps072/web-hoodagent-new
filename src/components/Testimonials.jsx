@@ -61,7 +61,9 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-orange-50 py-16 px-6 md:px-16 lg:px-24 overflow-hidden">
+    <section 
+      id = "testimonials"
+      className="bg-gradient-to-br from-gray-50 to-orange-50 py-16 px-6 md:px-16 lg:px-24 overflow-hidden">
       <div className="container mx-auto">
         <motion.div
           className="text-center mb-12"
