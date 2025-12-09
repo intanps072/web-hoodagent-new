@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import pertamaImg from "../assets/gallery/pertama.jpg";
-import keduaImg from "../assets/gallery/kedua.jpg";
-import ketigaImg from "../assets/gallery/ketiga.jpg";
+import pertamaImg from "../assets/Gallery/pertama.jpg";
+import keduaImg from "../assets/Gallery/kedua.jpg";
+import ketigaImg from "../assets/Gallery/ketiga.jpg";
 
 const Gallery = () => {
   const galleryImages = [

@@ -229,9 +229,12 @@ const ProductsPage = () => {
                 merchandise
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <button className="bg-white text-[#CB3B0F] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg">
+                <a
+                  href="http://wa.me/message/IONCXXUB3M4DF1"
+                  className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#CB3B0F] transition-all duration-300 hover:scale-105"
+                >
                   Contact Sales Team
-                </button>
+                </a>
                 <a
                   href="/"
                   className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#CB3B0F] transition-all duration-300 hover:scale-105"

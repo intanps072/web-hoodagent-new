@@ -5,6 +5,12 @@
       "name": "Admin Hood Agent",
       "email": "admin@hoodagent.com",
       "password": "admin123"
+    },
+    {
+      "id": "2",
+      "name": "Intan",
+      "email": "intan@hoodagent.com",
+      "password": "admin777"
     }
   ],
   "products": [
@@ -170,18 +176,6 @@
         "/uploads/products/product-1761028928976-590287523.png"
       ],
       "description": "Material: Cotton, Color: Black & Full Bordir, Screning: Embroidery"
-    },
-    {
-      "id": "14",
-      "name": "T-shirt",
-      "category": "T-Shirts",
-      "price": 150000,
-      "images": [
-        "/uploads/products/product-1761214670916-270704848.png",
-        "/uploads/products/product-1761214682269-584536863.png",
-        "/uploads/products/product-1761214688976-349088733.png"
-      ],
-      "description": "xxxx"
     }
   ],
   "events": [

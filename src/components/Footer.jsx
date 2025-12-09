@@ -71,14 +71,6 @@ const Footer = () => {
                   Home
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  to="/#story"
-                  className="text-gray-400 hover:text-[#FFAE00] transition-colors duration-300"
-                >
-                  Our Story
-                </Link>
-              </li> */}
               <li>
                 <Link
                   to="/#products"
@@ -141,25 +133,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
-        <div className="border-t border-gray-800 pt-8 mb-8">
-          <div className="max-w-md mx-auto text-center">
-            <h3 className="text-xl font-bold mb-3">Stay Updated</h3>
-            <p className="text-gray-400 mb-4">
-              Subscribe to our newsletter for the latest updates
-            </p>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-[#CB3B0F] transition-colors duration-300"
-              />
-              <button className="bg-[#CB3B0F] px-6 py-3 rounded-lg font-semibold hover:bg-[#FFAE00] transition-all duration-300 hover:scale-105">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
